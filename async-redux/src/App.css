@@ -62,11 +62,3 @@
   border: 40px solid transparent;
   border-image: url(./images/border-frame.png) 53 54 round ;
 }
-
-/* .frame {
-  height: 85vh;
-  width: 80%;
-  border: 3px solid #ccc;
-  background: #eee;
-  padding: 15px 25px;
-} */

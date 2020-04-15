@@ -1,7 +1,7 @@
 import {
-  FETCH_START, 
-  FETCH_SUCCESS, 
-  FETCH_FAILURE, 
+  FETCH_DOG_START, 
+  FETCH_DOG_SUCCESS, 
+  FETCH_DOG_FAILURE, 
 } from '../actions/dogAction.js'
 
 export const intialState = {
@@ -10,16 +10,17 @@ export const intialState = {
   error: ""
   };
 
+  //handles dog actions, creates a dog pcitures when call is succesful
   export const dogReducer = (state=intialState, action) =>{
     switch (action.type){
-      case FETCH_START:
-        console.log('FETCH_START')
+      case FETCH_DOG_START:
+        console.log('FETCH_DOG_START')
         return{...state, isFetching: true}
-      case FETCH_SUCCESS:
-        console.log('FETCH_SUCCESS')
+      case FETCH_DOG_SUCCESS:
+        console.log('FETCH_DOG_SUCCESS')
         return{...state, isFetching:false, url:action.payload.url, error:""}
-      case FETCH_FAILURE:
-        console.log('FETCH_ERROR')
+      case FETCH_DOG_FAILURE:
+        console.log('FETCH_DOG_ERROR')
         return{...state, isFetching:false, error: action.payload}
 
       
