@@ -6,6 +6,7 @@ import { fetchDog } from '../actions/dogAction.js'
 
 const RandomDog = props =>{
 
+    //checks if media type is image or video
     const mediaCheck = ()=>{
         if (props.dog.url.slice(-3)!='mp4'){
             return props.dog.url.length ? 

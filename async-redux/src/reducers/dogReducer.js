@@ -10,7 +10,7 @@ export const intialState = {
   error: ""
   };
 
-  //handles dog actions, creates a dog pcitures when call is succesful
+  //handles dog actions, creates a dog media when call is succesful
   export const dogReducer = (state=intialState, action) =>{
     switch (action.type){
       case FETCH_DOG_START:
