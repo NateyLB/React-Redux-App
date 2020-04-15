@@ -8,7 +8,9 @@ const RandomDog = props =>{
 
     const mediaCheck = ()=>{
         if (props.dog.url.slice(-3)!='mp4'){
-            return props.dog.url.length ? <img src={props.dog.url} alt='DOG PICTURE'/>: <p>Click button for random dog!</p>
+            return props.dog.url.length ? 
+            <img src={props.dog.url} alt='DOG PICTURE'/>:
+            <p>Click button for random dog!</p>
         }
         return props.dog.url.length ? 
         <video controls>
