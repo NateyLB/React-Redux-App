@@ -48,6 +48,15 @@
   width: 10%;
 }
 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .dog-container button{
+    width: 30%;
+    
+  }
+ }
+
+
 .dog-container img{
   height: 80vh;
   width: 80%;
